@@ -8,8 +8,8 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "novaKit": ["src"],
-      "novaKit/*": ["src/*", "*"]
+      "novaKitJS": ["src"],
+      "novaKitJS/*": ["src/*", "*"]
     }
   },
   "include": [".dumirc.ts", "src/**/*"]

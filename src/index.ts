@@ -1,1 +1,3 @@
-export { default as Foo } from './Foo';
+import { generateRandomArray, generateRandomString } from './lib/index';
+
+export { generateRandomArray, generateRandomString };
