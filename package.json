@@ -1,6 +1,6 @@
 {
   "name": "nova-kit-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A react library developed with dumi",
   "keywords": [
     "web",
@@ -11,6 +11,7 @@
     "js lib"
   ],
   "repository": {
+    "type": "git",
     "url": "https://github.com/unfetteredman2020/nova-kit-js.git"
   },
   "license": "ISC",
