@@ -1,20 +1,27 @@
-name: Build and Deploy
-on:
-  push:
-    branches:
-      - main
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v1
-
-      - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v2
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} ## GitHub 密钥 ACCESS_TOKEN 是在第二步Settings的Secrets中新增时定义的Name,要保持一致
-          BASE_BRANCH: main # The branch the action should deploy from.
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: build # The folder the action should deploy.
-          BUILD_SCRIPT: npm install && npm run-script docs:build # The build script the action should run prior to deploying.
+# 显现得workflow称号
+ name: noav-kit-js workflow action
+ on: 
+   # 推送到master分支开端打包
+   push:
+     branches:
+       - main
+ jobs:
+   # 开端打包
+   Build:
+     runs-on: ubuntu-latest
+     steps:
+     - name: checkout code
+       # 迁出触发的流程的版别 能让下面的作业流程拜访
+       uses: actions/checkout@v2
+       # setup-node 能够提供node环境，指定node版别以及 npm /yarn缓存
+     - name: actions/setup-node@v2
+       uses: actions/setup-node@v2   
+       with:
+         node: 16.14
+     # 初始用的npm 打包时刻太长了，就想着用yarn 成果没仔细看文档，yarn 不用装置 ubuntu 上面有的 
+     # - name: install yarn 
+     #  uses: npm install yarn     
+     # - run: yarn install
+     # - run: yarn build
+     # 简写为
+     - run: yarn install && yarn build
