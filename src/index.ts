@@ -1,3 +1,3 @@
-import { generateRandomArray, generateRandomString } from './lib/index';
+import { diffBothTime, generateRandomArray, generateRandomString } from './lib/index';
 
-export { generateRandomArray, generateRandomString };
+export { diffBothTime, generateRandomArray, generateRandomString };
