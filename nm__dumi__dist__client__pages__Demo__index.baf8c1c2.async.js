@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknova_kit_js=self.webpackChunknova_kit_js||[]).push([[9],{65149:function(f,n,e){e.r(n),e.d(n,{default:function(){return s}});var a=e(98186),o=e(67294),r=function(){var u=(0,a.UO)(),d=u.id,m=(0,a.WF)(),v=m.demos,c=v[d]||{},t=c.component;return t&&(0,o.createElement)(t)},s=r}}]);
