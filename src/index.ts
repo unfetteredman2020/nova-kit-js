@@ -1,3 +1,5 @@
-import { diffBothTime, generateRandomArray, generateRandomString } from './lib/index';
+import { diffBothTime, generateRandomArray, generateRandomChinese, generateRandomString, getRandomSentence } from './lib/index';
 
-export { diffBothTime, generateRandomArray, generateRandomString };
+export { diffBothTime, generateRandomArray, generateRandomChinese, generateRandomString, getRandomSentence };
+
+console.log(getRandomSentence(30));

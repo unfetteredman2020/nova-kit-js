@@ -18,7 +18,9 @@ export default defineConfig({
         link: '/lib',
       },
     ],
-
+    alias: {
+      '@/*': 'src/*',
+    },
     sidebar: {
       '/lib': [
         {
@@ -36,6 +38,11 @@ export default defineConfig({
             {
               title: 'generateRandomArray',
               link: '/lib/generate-random-array',
+            },
+
+            {
+              title: 'getRandomSentence',
+              link: '/lib/get-random-sentence',
             },
           ],
         },

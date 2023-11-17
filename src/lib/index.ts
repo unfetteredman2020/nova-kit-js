@@ -1,4 +1,4 @@
 import { diffBothTime } from './date/index';
-import { generateRandomArray, generateRandomString } from './random';
+import { generateRandomArray, generateRandomChinese, generateRandomString, getRandomSentence } from './random';
 
-export { diffBothTime, generateRandomArray, generateRandomString };
+export { diffBothTime, generateRandomArray, generateRandomChinese, generateRandomString, getRandomSentence };

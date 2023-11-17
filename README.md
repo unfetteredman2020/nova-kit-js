@@ -2,7 +2,7 @@
 
 A library for building web applications.
 
-这里会更新一些开发过程中经常用到的 utils 方法，欢迎大家一起维护。
+这里会更新一些开发过程中经常用到的 utils 方法，欢迎大家一起共建和维护。
 
 文档
 [document](https://unfetteredman2020.github.io/nova-kit-js)

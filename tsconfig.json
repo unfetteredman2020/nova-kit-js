@@ -7,9 +7,12 @@
     "jsx": "react",
     "baseUrl": "./",
     "paths": {
+      "@/*": ["src/*"],
+      "@lib/*": ["src/lib/*"],
       "@@/*": [".dumi/tmp/*"],
       "novaKitJS": ["src"],
-      "novaKitJS/*": ["src/*", "*"]
+      "novaKitJS/*": ["src/*", "*"],
+      "nova-kit-js/*": ["src/*", "*"]
     }
   },
   "include": [".dumirc.ts", "src/**/*"]

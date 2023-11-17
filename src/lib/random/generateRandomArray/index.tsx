@@ -1,6 +1,6 @@
 // 生成指定区间和长度切不能重复的随机数，
 export default function (min: number, max: number, length: number) {
-  const arr = [];
+  let arr: number[] = [];
   while (arr.length < length) {
     const num = Math.floor(Math.random() * (max - min + 1) + min);
     if (arr.indexOf(num) === -1) {
